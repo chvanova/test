@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <style>
+.btn {
+    width: 40px;
+    height: 40px;
+}
+</style>
+</head>
+<body>
+<center>
+<form action="{% url 'calculator' %}" method="GET">
+
+    <table align="center">
+        <tr>
+            <td><input type="submit"  class="btn" value="1" name="command" id="1"></td>
+            <td><input type="submit"  class="btn"  value="2" name="command" id="2"></td>
+            <td><input type="submit"  class="btn"  value="3" name="command" id="3"> </td>
+        </tr>
+        <tr>
+            <td><input type="submit"  class="btn"  value="4" name="command" id="4"></td>
+            <td><input type="submit"  class="btn"  value="5" name="command" id="5"></td>
+            <td><input type="submit"  class="btn"  value="6" name="command" id="6"></td>
+        </tr>
+        <tr>
+            <td><input type="submit"  class="btn"  value="7" name="command" id="7"></td>
+            <td><input type="submit"  class="btn"  value="8" name="command" id="8"></td>
+            <td><input type="submit"  class="btn"  value="9" name="command" id="9"></td>
+        </tr>
+        <tr>
+            <td><input type="submit"  class="btn"  value="0" name="command" id="0"></td>
+            <td><input type="submit"  class="btn"  value="." name="command" id="11"></td>
+            <td><input type="submit" class="btn" value="=" name="command" id="12"></td>
+
+        </tr>
+        <tr>
+            <td><input type="submit" class="btn" value="+" name="command" id="13"></td>
+            <td><input type="submit"  class="btn"  value="-" name="command" id="14"></td>
+            <td><input type="submit"  class="btn"  value="#" name="command" id="15"></td>
+
+        </tr>
+        <tr>
+            <td><input type="submit"  class="btn"  value="*" name="command" id="16"></td>
+            <td><input type="submit"  class="btn"  value="/" name="command" id="17"></td>
+            <td><input type="submit"  class="btn"  value="C" name="command" id="18"></td>
+        </tr>
+    </table>
+</form>
+</center>
+</body>
+</html>
+
